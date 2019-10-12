@@ -1,0 +1,8 @@
+/build
+Carthage/
+ti.calendar-iphone-*.zip
+/Cartfile.resolved
+.DS_Store
+/dist
+titanium-pencilkit.xcodeproj/project.xcworkspace/xcuserdata/*.xcuserdatad/UserInterfaceState.xcuserstate
+titanium-pencilkit.xcodeproj/xcuserdata/*.xcuserdatad/xcschemes/xcschememanagement.plist

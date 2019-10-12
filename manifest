@@ -1,0 +1,18 @@
+#
+# this is your module manifest and used by Titanium
+# during compilation, packaging, distribution, etc.
+#
+version: 1.0.0
+apiversion: 2
+architectures: armv7 arm64 i386 x86_64
+description: titanium-pencilkit
+author: Hans Knöchel
+license: UNLICENSED
+copyright: Copyright (c) 2019 by binaries included
+
+# these should not be edited
+name: titanium-pencilkit
+moduleid: ti.pencilkit
+guid: 297369cd-a62e-4740-8993-8201ec43b5fd
+platform: iphone
+minsdk: 8.2.0.GA
