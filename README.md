@@ -1,6 +1,6 @@
 # Titanium iOS 13+ PencilKit
 
-Use the native iOS 13+ PencilKit framework in Axway Titanium.
+Use the native iOS 13+ PencilKit framework in Axway Titanium. This module is sponsored by [binaries included](https://binaries-included.net)!
 
 ## Requirements
 
@@ -11,50 +11,54 @@ Use the native iOS 13+ PencilKit framework in Axway Titanium.
 ## Example
 
 ```js
-var PencilKit = require('ti.pencilkit');
+import PencilKit from 'ti.pencilkit';
 
-var win = Ti.UI.createWindow({
+const win = Ti.UI.createWindow({
     title: 'Current canvas'
 });
-var nav = Ti.UI.createNavigationWindow({
+
+const nav = Ti.UI.createNavigationWindow({
     window: win
 });
 
-win.addEventListener('open', function() {
+win.addEventListener('open', () => {
     canvasView.focus();
 });
 
-var saveButton = Ti.UI.createButton({
+const saveButton = Ti.UI.createButton({
     title: 'Save'
 });
+
 saveButton.addEventListener('click', saveCanvas);
 win.rightNavButton = saveButton;
 
-var canvasView = PencilKit.createCanvasView();
+const canvasView = PencilKit.createCanvasView();
 
 win.add(canvasView);
 nav.open();
 
 function saveCanvas() {
     canvasView.generateImage({
-        callback: function(event) {
-            var win2 = Ti.UI.createWindow({
+        callback: event => {
+            const win2 = Ti.UI.createWindow({
                 title: 'Saved canvas',
                 backgroundColor: '#fff'
             });
-            var nav2 = Ti.UI.createNavigationWindow({
+
+            const nav2 = Ti.UI.createNavigationWindow({
                 window: win2
             });
 
             win2.add(Ti.UI.createImageView({
                 image: event.image
             }));
+
             nav2.open({
                 modal: true
             });
         }
-    })
-    }
+    });
+}
 ```
 
 ## Author
@@ -63,8 +67,8 @@ Hans Knöchel
 
 ## License
 
-UNLICENSED
+MIT
 
 ## Copyright
 
-(c) 2019-present by binaries included
+(c) 2019-present by [binaries included](https://binaries-included.net)
