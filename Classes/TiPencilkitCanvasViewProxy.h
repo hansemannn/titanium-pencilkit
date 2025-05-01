@@ -7,7 +7,6 @@
 
 #import <TitaniumKit/TitaniumKit.h>
 
-API_AVAILABLE(ios(13.0))
 @interface TiPencilkitCanvasViewProxy : TiViewProxy
 
 - (void)setDrawing:(TiBlob *)drawingBlob;

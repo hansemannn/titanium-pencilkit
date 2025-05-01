@@ -8,7 +8,6 @@
 #import <TitaniumKit/TitaniumKit.h>
 #import <PencilKit/PencilKit.h>
 
-API_AVAILABLE(ios(13.0))
 @interface TiPencilkitCanvasView : TiUIView<PKCanvasViewDelegate, PKToolPickerObserver>
 
 @property(nonatomic, strong) PKCanvasView *canvasView;

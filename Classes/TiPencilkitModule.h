@@ -1,8 +1,8 @@
 /**
  * titanium-pencilkit
  *
- * Created by Your Name
- * Copyright (c) 2019 Your Company. All rights reserved.
+ * Created by Hans Knöchel
+ * Copyright (c) 2019-2025 binaries included. All rights reserved.
  */
 
 #import "TiModule.h"
